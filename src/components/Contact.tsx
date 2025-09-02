@@ -132,7 +132,7 @@ const Contact = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center text-gray-400 hover:text-neon-purple transition-all duration-300 transform hover:scale-110 border border-gray-700"
+                      className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center text-white hover:text-neon-purple transition-all duration-300 transform hover:scale-110 border border-gray-700"
                     >
                       <link.icon size={20} />
                     </a>

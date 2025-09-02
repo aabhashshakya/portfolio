@@ -59,7 +59,7 @@ const Education = () => {
                       </h4>
                       <p className="text-neon-purple group-hover:text-neon-green transition-colors duration-300 font-semibold font-modern">{edu.institution}</p>
                     </div>
-                    <div className="text-right text-sm text-gray-400 font-modern">
+                    <div className="text-right text-sm text-white font-modern">
                       <div className="flex items-center">
                         <Calendar size={14} className="mr-1 text-neon-cyan" />
                         {edu.period}

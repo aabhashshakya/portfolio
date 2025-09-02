@@ -34,16 +34,11 @@ const Hero = () => {
     },
     {
       icon: Download,
-      href: '/resume.pdf',
+      href: 'https://drive.google.com/file/d/1zdndkTAhqZC0k9Lri3Zbo3CDpx1pca9K/view?usp=sharing',
       label: 'Resume',
       color: 'hover:text-neon-green'
     },
-    {
-      icon: Mail,
-      href: 'mailto:aabhash.shakya@example.com',
-      label: 'Email',
-      color: 'hover:text-neon-pink'
-    }
+
   ]
 
   return (
@@ -113,27 +108,25 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pb-8">
-  <a href="#projects" className="btn-neon">
-    <Code size={20} className="mr-2" />
-    View Projects
-  </a>
-  <a href="#contact" className="btn-neon border-neon-purple text-neon-purple hover:bg-neon-purple">
-    <Zap size={20} className="mr-2" />
-    Get In Touch
-  </a>
-</div>
+              <a href="#projects" className="btn-neon">
+                <Code size={20} className="mr-2" />
+                View Projects
+              </a>
+              <a href="#contact" className="btn-neon border-neon-purple text-neon-purple hover:bg-neon-purple">
+                <Zap size={20} className="mr-2" />
+                Get In Touch
+              </a>
+            </div>
           </div>
         </div>
         
-  {/* Scroll indicator centered below CTA buttons */}
-  <div className="flex justify-center animate-bounce-gentle pb-3 ms-2">
-    <div className="w-6 h-10 border-2 border-neon-cyan rounded-full flex justify-center">
-      <div className="w-1 h-3 bg-neon-cyan rounded-full mt-2 animate-pulse"></div>
-    </div>
-  </div>
+        {/* Scroll indicator centered below CTA buttons */}
+        <div className="flex justify-center animate-bounce-gentle pb-3 ms-2">
+          <div className="w-6 h-10 border-2 border-neon-cyan rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-neon-cyan rounded-full mt-2 animate-pulse"></div>
+          </div>
+        </div>
       </div>
-
-    
     </section>
   )
 }

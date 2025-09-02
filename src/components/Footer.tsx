@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heart, Github, Linkedin, Mail, Terminal } from 'lucide-react'
+import { Heart, Github, Linkedin, Download, Terminal } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -16,10 +16,10 @@ const Footer = () => {
       label: 'LinkedIn'
     },
     {
-      icon: Mail,
-      href: 'mailto:aabhash.shakya@example.com',
-      label: 'Email'
-    }
+      icon: Download,
+      href: 'https://drive.google.com/file/d/1zdndkTAhqZC0k9Lri3Zbo3CDpx1pca9K/view?usp=sharing',
+      label: 'Resume',
+    },
   ]
 
   return (

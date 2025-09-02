@@ -27,7 +27,6 @@ const Experience = () => {
       title: 'Software Engineer [Mobile]',
       company: 'Spiralogics Inc.',
       location: 'Sankhamul, Nepal',
-      period: 'June 2022 - Present',
       description: 'Leading mobile development projects with focus on Android, Flutter, and cross-platform solutions.',
       achievements: [
         'Collaborated with cross-functional teams to deliver high-quality mobile applications',
@@ -36,13 +35,12 @@ const Experience = () => {
         'Built CI/CD pipelines and published applications to Play Store and App Store',
         'Developed Proof of Concept (POC) applications to demonstrate new technologies'
       ],
-      technologies: ['Android', 'Kotlin', 'Java', 'Flutter', 'Jetpack Compose', 'KMM', 'Firebase', 'ExoPlayer']
+      technologies: ['Android', 'Kotlin', 'Java', 'Flutter','Xamarin', 'Jetpack Compose', 'KMM', 'Firebase', 'ExoPlayer']
     },
     {
-      title: 'Freelancer',
+      title: 'Flutter Developer',
       company: 'ZoneTeamX',
       location: 'Hong Kong',
-      period: 'April 2024 - June 2025',
       description: 'Developed real-time voice chat application with advanced features and multi-platform support.',
       achievements: [
         'Managed complete application architecture, development, and deployment lifecycle',
@@ -53,24 +51,9 @@ const Experience = () => {
       technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Flame Engine', 'Payment Integration']
     },
     {
-      title: 'Android Developer Intern',
-      company: 'Spiralogics Inc.',
-      location: 'Sankhamul, Nepal',
-      period: 'March - June 2022',
-      description: 'Gained hands-on experience in Android development and cross-platform technologies.',
-      achievements: [
-        'Developed fitness tracking application using modern Android architecture patterns',
-        'Integrated third-party APIs for real-time data synchronization',
-        'Researched and learned cross-platform development frameworks',
-        'Gained experience with cloud platforms and CI/CD pipeline development'
-      ],
-      technologies: ['Android', 'Kotlin', 'MVVM', 'Hilt', 'Coroutines', 'Strava API', 'Azure']
-    },
-    {
       title: 'Cloud Analyst',
       company: 'GrowByData LLC',
       location: 'Lalitpur, Nepal',
-      period: 'June 2017 - January 2020',
       description: 'Optimized digital content workflows and managed data processing operations.',
       achievements: [
         'Enhanced online product catalog quality and consistency across platforms',
@@ -117,10 +100,6 @@ const Experience = () => {
                           {exp.company}
                         </div>
                         <div className="flex flex-col sm:flex-row sm:items-center text-gray-400 text-sm space-y-1 sm:space-y-0 sm:space-x-4 font-modern">
-                          <div className="flex items-center">
-                            <Calendar size={16} className="mr-2 text-neon-cyan" />
-                            {exp.period}
-                          </div>
                           <div className="flex items-center">
                             <MapPin size={16} className="mr-2 text-neon-cyan" />
                             {exp.location}
