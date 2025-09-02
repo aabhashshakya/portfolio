@@ -42,7 +42,7 @@ const Hero = () => {
   ]
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-5">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden ">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes */}
