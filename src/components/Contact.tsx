@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Terminal } from 'lucide-react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null)
@@ -31,13 +32,18 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    // Create mailto link
-    const subject = encodeURIComponent(formData.subject)
-    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)
-    const mailtoLink = `mailto:aabhashshakya@gmail.com?subject=${subject}&body=${body}`
-    
-    window.location.href = mailtoLink
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    emailjs.send(
+      'service_qnw17qa',   // e.g., Gmail service
+      'template_n8abown',  // template with Reply-To field
+      formData,            // { name, email, subject, message }
+      'iteLUTDNRyZxm7opT'    // from EmailJS Integration tab
+    ).then(() => {
+      alert('Message sent successfully!')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    }, (error) => {
+      console.error(error)
+      alert('Failed to send message, please try again.')
+    })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
