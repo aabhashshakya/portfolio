@@ -59,7 +59,7 @@ const Projects = () => {
       links: {
         website: 'https://www.entervu.com/'
       },
-      featured: false
+      featured: true
     },
     {
       title: 'BracketIT',
@@ -71,7 +71,7 @@ const Projects = () => {
       links: {
         website: 'https://bracketlt.spiralogics.com/'
       },
-      featured: false
+      featured: true
     },
     {
       title: 'Baghchal',
@@ -83,9 +83,9 @@ const Projects = () => {
       links: {
         website: 'https://baghchal.spiralogics.com/'
       },
-      featured: false
+      featured: true
     },
-  
+
     {
       title: 'GetFit',
       description: 'Fitness tracking app developed using MVVM architecture and Dependency Injection with Hilt. Integrated Strava API for real-time workout data synchronization and performance metrics tracking.',
@@ -136,7 +136,7 @@ const Projects = () => {
 
         <div className="grid gap-8">
           {/* Featured Projects */}
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
             {projects.filter(p => p.featured).map((project, index) => (
               <div
                 key={project.title}
@@ -179,21 +179,21 @@ const Projects = () => {
 
                   {Object.keys(project.links).length > 0 && (
                     <div className="flex flex-wrap gap-3">
-                    {Object.entries(project.links).map(([linkType, url]) => {
-                      const IconComponent = getLinkIcon(linkType)
-                      return (
-                        <a
-                          key={linkType}
-                          href={url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center text-neon-cyan hover:text-neon-purple font-medium transition-colors duration-300 text-sm font-modern"
-                        >
-                          <IconComponent size={16} className="mr-2" />
-                          {getLinkLabel(linkType)}
-                        </a>
-                      )
-                    })}
+                      {Object.entries(project.links).map(([linkType, url]) => {
+                        const IconComponent = getLinkIcon(linkType)
+                        return (
+                          <a
+                            key={linkType}
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center text-neon-cyan hover:text-neon-purple font-medium transition-colors duration-300 text-sm font-modern"
+                          >
+                            <IconComponent size={16} className="mr-2" />
+                            {getLinkLabel(linkType)}
+                          </a>
+                        )
+                      })}
                     </div>
                   )}
                 </div>
@@ -202,50 +202,55 @@ const Projects = () => {
           </div>
 
           {/* Other Projects */}
-          <div className="grid md:grid-cols-4 gap-4">
-            {projects.filter(p => !p.featured).map((project, index) => (
-              <div
-                key={project.title}
-                className="glass-effect rounded-xl overflow-hidden group animate-on-scroll cyber-border"
-                style={{ animationDelay: `${(index + 2) * 0.1}s` }}
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-28 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                  <div className="absolute top-3 right-3">
-                    <div className="flex items-center glass-effect rounded-full px-2 py-1 text-xs font-medium font-cyber">
-                      <project.icon size={12} className="mr-1 text-neon-cyan" />
-                      <span className="text-white">{project.type}</span>
-                    </div>
+          {projects.filter(p => !p.featured).length > 0 && (
+            <div className="text-center mb-3 animate-on-scroll">
+              <h2 className="section-title">More Projects</h2>
+            </div>
+          )}
+        <div className="grid md:grid-cols-4 gap-4">
+          {projects.filter(p => !p.featured).map((project, index) => (
+            <div
+              key={project.title}
+              className="glass-effect rounded-xl overflow-hidden group animate-on-scroll cyber-border"
+              style={{ animationDelay: `${(index + 2) * 0.1}s` }}
+            >
+              <div className="relative overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-28 object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div className="absolute top-3 right-3">
+                  <div className="flex items-center glass-effect rounded-full px-2 py-1 text-xs font-medium font-cyber">
+                    <project.icon size={12} className="mr-1 text-neon-cyan" />
+                    <span className="text-white">{project.type}</span>
                   </div>
                 </div>
+              </div>
 
-                <div className="p-4">
-                  <h3 className="text-base font-cyber font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-300 mb-3 text-xs leading-relaxed font-modern">
-                    {project.description}
-                  </p>
+              <div className="p-4">
+                <h3 className="text-base font-cyber font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors duration-300">
+                  {project.title}
+                </h3>
+                <p className="text-gray-300 mb-3 text-xs leading-relaxed font-modern">
+                  {project.description}
+                </p>
 
-                  <div className="flex flex-wrap gap-1 mb-3">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                 
-                  </div>
+                <div className="flex flex-wrap gap-1 mb-3">
+                  {project.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern"
+                    >
+                      {tech}
+                    </span>
+                  ))}
 
-                  {Object.keys(project.links).length > 0 && (
-                    <div className="flex flex-wrap gap-2">
+                </div>
+
+                {Object.keys(project.links).length > 0 && (
+                  <div className="flex flex-wrap gap-2">
                     {Object.entries(project.links).map(([linkType, url]) => {
                       const IconComponent = getLinkIcon(linkType)
                       return (
@@ -261,15 +266,15 @@ const Projects = () => {
                         </a>
                       )
                     })}
-                    </div>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
+    </section >
   )
 }
 
