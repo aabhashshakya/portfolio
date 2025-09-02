@@ -47,7 +47,7 @@ const Hero = () => {
   ]
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-5">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes */}
@@ -57,6 +57,7 @@ const Hero = () => {
         <div className="absolute bottom-20 right-1/3 w-28 h-28 border border-neon-green opacity-20 animate-float interactive-bg-element cursor-pointer" style={{ animationDelay: '6s' }}></div>
         
         {/* Glowing orbs */}
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-neon-cyan rounded-full animate-pulse-neon interactive-bg-element cursor-pointer"></div>
         <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-neon-purple rounded-full animate-pulse-neon interactive-bg-element cursor-pointer" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/2 left-3/4 w-1 h-1 bg-neon-pink rounded-full animate-pulse-neon interactive-bg-element cursor-pointer" style={{ animationDelay: '3s' }}></div>
       </div>
@@ -64,8 +65,21 @@ const Hero = () => {
       <div className="container-max section-padding relative z-10">
         <div className="grid lg:grid-cols-3 gap-8 items-center">
           {/* Left side - Profile */}
+          {/* Right side - Profile Image */}
+          <div className="flex justify-center lg:justify-end animate-slide-in-right">
+            <div className="relative group">
+              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-neon-cyan via-neon-purple to-neon-pink p-1 animate-glow">
+                <div className="w-full h-full rounded-full bg-dark-100 flex items-center justify-center text-neon-cyan text-5xl font-cyber font-bold">
+                  AS
+                </div>
+              </div>
+              <div className="absolute -top-3 -right-3 w-8 h-8 bg-neon-green rounded-full animate-pulse-neon"></div>
+              <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-neon-pink rounded-full animate-pulse-neon" style={{ animationDelay: '1s' }}></div>
+            </div>
+          </div>
           <div className="lg:col-span-2 text-center lg:text-left animate-slide-in-left">
             {/* Name and Title */}
+            
             <h1 className="text-4xl md:text-6xl font-cyber font-bold mb-4">
               <span className="text-white">Aabhash</span>{' '}
               <span className="text-neon-cyan neon-text">Shakya</span>
@@ -98,29 +112,16 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#projects" className="btn-neon">
-                <Code size={20} className="mr-2" />
-                View Projects
-              </a>
-              <a href="#contact" className="btn-neon border-neon-purple text-neon-purple hover:bg-neon-purple">
-                <Zap size={20} className="mr-2" />
-                Get In Touch
-              </a>
-            </div>
-          </div>
-
-          {/* Right side - Profile Image */}
-          <div className="flex justify-center lg:justify-end animate-slide-in-right">
-            <div className="relative group">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-neon-cyan via-neon-purple to-neon-pink p-1 animate-glow">
-                <div className="w-full h-full rounded-full bg-dark-100 flex items-center justify-center text-neon-cyan text-5xl font-cyber font-bold">
-                  AS
-                </div>
-              </div>
-              <div className="absolute -top-3 -right-3 w-8 h-8 bg-neon-green rounded-full animate-pulse-neon"></div>
-              <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-neon-pink rounded-full animate-pulse-neon" style={{ animationDelay: '1s' }}></div>
-            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pb-8">
+  <a href="#projects" className="btn-neon">
+    <Code size={20} className="mr-2" />
+    View Projects
+  </a>
+  <a href="#contact" className="btn-neon border-neon-purple text-neon-purple hover:bg-neon-purple">
+    <Zap size={20} className="mr-2" />
+    Get In Touch
+  </a>
+</div>
           </div>
         </div>
       </div>

@@ -29,11 +29,11 @@ const Header = () => {
     }`}>
       <nav className="container-max section-padding">
         <div className="flex items-center justify-between h-16">
-          <a href="#home" className="flex items-center space-x-2 text-2xl font-cyber font-bold">
-            <Terminal className="text-neon-cyan" size={24} />
-            <span className="text-white">Aabhash</span>
-            <span className="text-neon-cyan">Shakya</span>
-          </a>
+        <a href="#home" className="flex items-center space-x-2 text-2xl font-cyber font-bold pr-8">
+  <Terminal className="text-neon-cyan" size={24} />
+  <span className="text-white">Aabhash</span>
+  <span className="text-neon-cyan">Shakya</span>
+</a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

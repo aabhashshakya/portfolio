@@ -85,16 +85,7 @@ const Projects = () => {
       },
       featured: false
     },
-    {
-      title: 'TamusKollection',
-      description: 'Boutique app built with Flutter using BLoC state management. Allows boutique owners to showcase products and clients to place orders by selecting items or submitting custom measurements through an interactive UI.',
-      image: 'https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=800',
-      type: 'Mobile App',
-      icon: Smartphone,
-      technologies: ['Flutter', 'BLoC', 'Custom Orders', 'API Integration', 'Responsive UI'],
-      links: {},
-      featured: false
-    },
+  
     {
       title: 'GetFit',
       description: 'Fitness tracking app developed using MVVM architecture and Dependency Injection with Hilt. Integrated Strava API for real-time workout data synchronization and performance metrics tracking.',
