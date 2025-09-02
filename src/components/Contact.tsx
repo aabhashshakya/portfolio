@@ -122,7 +122,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-cyber font-semibold text-white">{info.label}</p>
-                      <p className="text-gray-400 font-modern">{info.value}</p>
+                      <p className="text-white font-modern">{info.value}</p>
                     </div>
                   </a>
                 ))}
