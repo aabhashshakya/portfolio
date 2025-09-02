@@ -109,7 +109,7 @@ const Experience = () => {
                   <div className="glass-effect rounded-2xl p-6 cyber-border group hover:scale-105 transition-all duration-300">
                     <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                       <div>
-                        <h3 className="text-2xl font-cyber font-bold text-neon-cyan mb-2 group-hover:text-neon-purple transition-colors duration-300">
+                        <h3 className="text-2xl font-cyber font-bold text-neon-white mb-2 group-hover:text-neon-cyan transition-colors duration-300">
                           {exp.title}
                         </h3>
                         <div className="flex items-center text-white font-semibold mb-2">

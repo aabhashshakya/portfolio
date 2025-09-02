@@ -57,7 +57,7 @@ const Education = () => {
                       <h4 className="text-lg font-cyber font-bold text-white group-hover:text-neon-cyan transition-colors duration-300">
                         {edu.degree}
                       </h4>
-                      <p className="text-neon-purple font-semibold font-modern">{edu.institution}</p>
+                      <p className="text-neon-purple group-hover:text-neon-green transition-colors duration-300 font-semibold font-modern">{edu.institution}</p>
                     </div>
                     <div className="text-right text-sm text-gray-400 font-modern">
                       <div className="flex items-center">
@@ -73,8 +73,8 @@ const Education = () => {
                   {edu.achievements && (
                     <div>
                       <div className="flex items-center mb-3">
-                        <Trophy className="mr-2 text-neon-purple" size={16} />
-                        <h5 className="font-cyber font-bold text-neon-purple">Achievements</h5>
+                        <Trophy className="mr-2 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300" size={16} />
+                        <h5 className="font-cyber font-bold text-neon-purple group-hover:text-neon-cyan transition-colors duration-300">Achievements</h5>
                       </div>
                       <ul className="space-y-2">
                         {edu.achievements.map((achievement, i) => (

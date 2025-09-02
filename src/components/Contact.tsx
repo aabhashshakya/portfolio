@@ -57,8 +57,8 @@ const Contact = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+977 98XXXXXXXX',
-      href: 'tel:+97798XXXXXXXX'
+      value: '+977 9860925815',
+      href: 'tel:+9779860925815'
     },
     {
       icon: MapPin,
@@ -132,7 +132,7 @@ const Contact = () => {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center text-gray-400 hover:text-neon-cyan transition-all duration-300 transform hover:scale-110 border border-gray-700"
+                      className="w-10 h-10 glass-effect rounded-lg flex items-center justify-center text-gray-400 hover:text-neon-purple transition-all duration-300 transform hover:scale-110 border border-gray-700"
                     >
                       <link.icon size={20} />
                     </a>

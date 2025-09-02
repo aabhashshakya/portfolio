@@ -179,7 +179,7 @@ const Projects = () => {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple rounded text-xs font-medium border border-neon-purple/30 font-modern"
+                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern"
                       >
                         {tech}
                       </span>
@@ -245,13 +245,13 @@ const Projects = () => {
                     {project.technologies.slice(0, 2).map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple rounded text-xs font-medium border border-neon-purple/30 font-modern"
+                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 2 && (
-                      <span className="px-2 py-1 bg-neon-purple/10 text-neon-purple rounded text-xs font-medium border border-neon-purple/30 font-modern">
+                      <span className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern">
                         +{project.technologies.length - 2}
                       </span>
                     )}

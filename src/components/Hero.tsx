@@ -57,7 +57,6 @@ const Hero = () => {
         <div className="absolute bottom-20 right-1/3 w-28 h-28 border border-neon-green opacity-20 animate-float interactive-bg-element cursor-pointer" style={{ animationDelay: '6s' }}></div>
         
         {/* Glowing orbs */}
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-neon-cyan rounded-full animate-pulse-neon interactive-bg-element cursor-pointer"></div>
         <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-neon-purple rounded-full animate-pulse-neon interactive-bg-element cursor-pointer" style={{ animationDelay: '1s' }}></div>
         <div className="absolute top-1/2 left-3/4 w-1 h-1 bg-neon-pink rounded-full animate-pulse-neon interactive-bg-element cursor-pointer" style={{ animationDelay: '3s' }}></div>
       </div>
