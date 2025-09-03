@@ -36,7 +36,7 @@ const Contact = () => {
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       formData,
-      import.meta.env.VITE_EMAILJS_PRIVATE_KEY
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     ).then(() => {
       alert('Message sent successfully!')
       setFormData({ name: '', email: '', subject: '', message: '' })
