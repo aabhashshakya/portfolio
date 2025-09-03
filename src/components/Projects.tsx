@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: 'ZONE - Group Voice Chat Room',
       description: 'Flutter-based social voice chat platform supporting up to 9 people on mic and 100+ concurrent listeners. Features 4+ payment gateways across 20+ countries, in-app Plinko mini-game with Flutter Flame at 60 FPS, and rich avatar customizations.',
-      image: '/projects/entervu/collage.png',
+      image: '/projects/zone/collage.jpeg',
       type: 'Mobile App',
       icon: Smartphone,
       technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Realtime chat', 'Flame Engine', 'In-app purchases', 'Multi-Currency Payments'],
@@ -52,7 +52,7 @@ const Projects = () => {
     {
       title: 'Entervu',
       description: 'Short-form video social networking app for professionals built with Jetpack Compose. Features intuitive video feed with horizontal/vertical swipe navigation, ExoPlayer HLS streaming with 80% improved load times, and custom video compression achieving 60% file size reduction.',
-      image: '/projects/entervu/collage.png',
+      image: '/projects/entervu/collage.jpeg',
       type: 'Mobile App',
       icon: Smartphone,
       technologies: ['Android', 'Jetpack Compose', 'ExoPlayer', 'HLS Streaming', 'Video Compression', 'Video Editing'],
@@ -76,7 +76,7 @@ const Projects = () => {
     {
       title: 'Baghchal',
       description: 'Strategic cultural board game with user-selectable AI difficulty (depth 1-5) powered by alpha-beta pruning. Built with Jetpack Compose and CustomPainter for efficient rendering, optimized with KMM reducing platform-specific development time by 50%.',
-      image: '/projects/baghchal/collage.png',
+      image: '/projects/baghchal/collage.jpeg',
       type: 'Game',
       icon: Globe,
       technologies: ['Kotlin Multiplatform', 'Alpha-Beta Pruning', 'Jetpack Compose', 'CustomPainter', 'AI Strategy'],

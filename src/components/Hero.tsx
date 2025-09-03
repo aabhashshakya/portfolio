@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Github, Linkedin, Download, Mail, MapPin, Code, Zap } from 'lucide-react'
+import dpImg from '../assets/dp.jpg'
+
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('')
@@ -50,7 +52,7 @@ const Hero = () => {
         <div className="absolute top-40 right-20 w-24 h-24 border border-neon-purple opacity-30 animate-float interactive-bg-element cursor-pointer" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-40 left-1/4 w-20 h-20 border border-neon-pink opacity-25 rotate-12 animate-float interactive-bg-element cursor-pointer" style={{ animationDelay: '4s' }}></div>
         <div className="absolute bottom-20 right-1/3 w-28 h-28 border border-neon-green opacity-20 animate-float interactive-bg-element cursor-pointer" style={{ animationDelay: '6s' }}></div>
-        
+
         {/* Glowing orbs */}
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-neon-cyan rounded-full animate-pulse-neon interactive-bg-element cursor-pointer"></div>
         <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-neon-purple rounded-full animate-pulse-neon interactive-bg-element cursor-pointer" style={{ animationDelay: '1s' }}></div>
@@ -64,26 +66,31 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end animate-slide-in-right">
             <div className="relative group">
               <div className="w-48 h-48 rounded-full bg-gradient-to-br from-neon-cyan via-neon-purple to-neon-pink p-1 animate-glow">
-                <div className="w-full h-full rounded-full bg-dark-100 flex items-center justify-center text-neon-cyan text-5xl font-cyber font-bold">
-                  AS
-                </div>
+                <img
+                  src={dpImg}
+                  alt="Profile"
+                  className="w-full h-full rounded-full object-cover"
+                />
               </div>
               <div className="absolute -top-3 -right-3 w-8 h-8 bg-neon-green rounded-full animate-pulse-neon"></div>
-              <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-neon-pink rounded-full animate-pulse-neon" style={{ animationDelay: '1s' }}></div>
+              <div
+                className="absolute -bottom-3 -left-3 w-6 h-6 bg-neon-pink rounded-full animate-pulse-neon"
+                style={{ animationDelay: '1s' }}
+              ></div>
             </div>
           </div>
           <div className="lg:col-span-2 text-center lg:text-left animate-slide-in-left">
             {/* Name and Title */}
-            
+
             <h1 className="text-4xl md:text-6xl font-cyber font-bold mb-4">
               <span className="text-white">Aabhash</span>{' '}
               <span className="text-neon-cyan neon-text">Shakya</span>
             </h1>
-            
+
             <div className="text-xl md:text-2xl text-gray-300 mb-4 h-8 font-modern">
               <span className="typing-animation">{displayText}</span>
             </div>
-            
+
             <div className="flex items-center justify-center lg:justify-start text-gray-400 mb-8">
               <MapPin size={16} className="mr-2 text-neon-cyan" />
               <span>Kathmandu, Nepal</span>
@@ -119,7 +126,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Scroll indicator centered below CTA buttons */}
         <div className="flex justify-center animate-bounce-gentle pb-3 ms-2">
           <div className="w-6 h-10 border-2 border-neon-cyan rounded-full flex justify-center">
