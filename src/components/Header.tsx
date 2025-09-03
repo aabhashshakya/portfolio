@@ -59,10 +59,9 @@ const Header = () => {
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 glass-effect border-t border-neon-cyan/20">
+          <div className="md:hidden absolute top-full left-0 right-0 border-t border-neon-cyan/20 bg-black/90 backdrop-blur-md">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
                 <a
@@ -77,6 +76,7 @@ const Header = () => {
             </div>
           </div>
         )}
+
       </nav>
     </header>
   )

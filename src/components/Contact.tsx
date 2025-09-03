@@ -70,7 +70,8 @@ const Contact = () => {
       icon: MapPin,
       label: 'Location',
       value: 'Kathmandu, Nepal',
-      href: '#'
+      href: 'https://www.google.com/maps/place/Kathmandu,+Nepal',
+      target: '_blank' // optional, opens in new tab
     }
   ]
 
@@ -115,6 +116,7 @@ const Contact = () => {
                   <a
                     key={info.label}
                     href={info.href}
+                    target="_blank"
                     className="flex items-center p-4 glass-effect rounded-lg hover:bg-neon-cyan/10 transition-all duration-300 transform hover:scale-105 group border border-gray-700"
                   >
                     <div className="w-10 h-10 bg-gradient-to-br from-neon-cyan/20 to-neon-purple/20 rounded-lg flex items-center justify-center mr-4 group-hover:from-neon-cyan/30 group-hover:to-neon-purple/30 transition-all duration-300">
