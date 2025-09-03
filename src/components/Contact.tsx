@@ -33,10 +33,10 @@ const Contact = () => {
     e.preventDefault()
     
     emailjs.send(
-      'service_qnw17qa',   // e.g., Gmail service
-      'template_n8abown',  // template with Reply-To field
-      formData,            // { name, email, subject, message }
-      'iteLUTDNRyZxm7opT'    // from EmailJS Integration tab
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formData,
+      import.meta.env.VITE_EMAILJS_PRIVATE_KEY
     ).then(() => {
       alert('Message sent successfully!')
       setFormData({ name: '', email: '', subject: '', message: '' })
