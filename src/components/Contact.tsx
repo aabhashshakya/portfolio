@@ -153,7 +153,7 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="animate-on-scroll" style={{ animationDelay: '0.3s' }}>
             <form onSubmit={handleSubmit} className="glass-effect rounded-2xl p-6 cyber-border">
-              <h3 className="text-2xl font-cyber font-bold text-neon-purple mb-6">
+              <h3 className="text-2xl font-cyber font-bold text-neon-pink mb-6">
                 Send Message
               </h3>
 

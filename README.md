@@ -1,3 +1,3 @@
 # portfolio
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/aabhashshakya/portfolio)
+https://aabhashshakya.com.np
