@@ -27,28 +27,32 @@ const Experience = () => {
       title: 'Software Engineer [Mobile]',
       company: 'Spiralogics Inc.',
       location: 'Sankhamul, Nepal',
-      description: 'Leading mobile development projects with focus on Android, Flutter, and cross-platform solutions.',
+      description: 'Led mobile development projects with a focus on Android, Flutter, and cross-platform solutions.',
       achievements: [
-        'Collaborated with cross-functional teams to deliver high-quality mobile applications',
-        'Participated in code reviews and maintained coding standards across projects',
-        'Implemented new features and optimized existing functionality for better performance',
+        'Implemented complex calendar and scheduling logic with offline-first support, ensuring 90% of features available without internet access',
+        'Optimized HLS video streaming with ExoPlayer for smoother playback and reduced buffering',
+        'Built custom video compression and editing workflows, reducing file sizes by 60% while maintaining quality',
+        'Designed and developed cross-platform game logic with Kotlin Multiplatform, cutting platform-specific development time by 50%',
+        'Integrated AI-driven gameplay using alpha-beta pruning with user-selectable difficulty levels (depth 1–5)',
+        'Collaborated with cross-functional teams to deliver production-grade applications',
         'Built CI/CD pipelines and published applications to Play Store and App Store',
-        'Developed Proof of Concept (POC) applications to demonstrate new technologies'
+        'Developed Proof of Concept (POC) apps to evaluate emerging technologies'
       ],
-      technologies: ['Android', 'Kotlin', 'Java', 'Flutter','Xamarin', 'Jetpack Compose', 'KMM', 'Firebase', 'ExoPlayer']
+      technologies: ['Android', 'Kotlin', 'Java', 'Flutter','Xamarin', 'Jetpack Compose', 'KMM', 'Firebase', 'ExoPlayer', 'HLS Streaming']
     },
     {
       title: 'Flutter Developer',
       company: 'ZoneTeamX',
       location: 'Hong Kong',
-      description: 'Developed real-time voice chat application with advanced features and multi-platform support.',
+      description: 'Developed real-time voice and chat communication application with advanced features and multi-platform support.',
       achievements: [
         'Managed complete application architecture, development, and deployment lifecycle',
         'Collaborated with international team to deliver complex real-time communication features',
-        'Implemented payment integration across multiple regions and currencies',
+        'Implemented payment integration across 20+ countries in Asia and the Middle East, supporting multiple currencies',
+        'Implemented in-app purchases for digital goods and mini-games',
         'Developed interactive gaming features within the main application'
       ],
-      technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Flame Engine', 'Payment Integration']
+      technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Flame Engine', 'Payment Integration', 'In-app Purchases']
     },
     {
       title: 'Cloud Analyst',
@@ -63,6 +67,7 @@ const Experience = () => {
       technologies: ['Data Processing', 'Content Management', 'Digital Workflows']
     }
   ]
+  
 
   return (
     <section id="experience" ref={sectionRef} className="section-compact bg-black relative">

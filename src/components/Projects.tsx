@@ -25,7 +25,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Nepal Sambat',
-      description: 'Implementation of astronomical calculations and scientific principles for the national Nepal Sambat Calendar. Computes 200+ festival dates, tithis, and celestial events for AD, BS and NS calendars up to 1166 NS. Features dual-mode data handling with 90% offline access and received official recognition from Prime Minister Pushpa Kamal Dahal.',
+      description: 'Astronomical calendar app for the national Nepal Sambat Calendar. Provides festival dates, tithis, and celestial events across AD, BS, and NS calendars, with date conversion functionality. Offers offline-first support and official recognition by the Government of Nepal.',
       image: '/projects/nepal_sambat/collage.png',
       type: 'Mobile App',
       icon: Smartphone,
@@ -38,11 +38,11 @@ const Projects = () => {
     },
     {
       title: 'ZONE - Group Voice Chat Room',
-      description: 'Flutter-based social voice chat platform supporting up to 9 people on mic and 100+ concurrent listeners. Features 4+ payment gateways across 20+ countries, in-app Plinko mini-game with Flutter Flame at 60 FPS, and rich avatar customizations.',
+      description: 'Social voice chat platform with real-time voice and chat communication. Supports interactive rooms, games, battles, gifting, parties, VIP subscriptions, level system, and an agency system for user engagement.',
       image: '/projects/zone/collage.jpeg',
       type: 'Mobile App',
       icon: Smartphone,
-      technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Realtime chat', 'Flame Engine', 'In-app purchases', 'Multi-Currency Payments'],
+      technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Realtime Chat', 'Flame Engine', 'In-app Purchases', 'Multi-Currency Payments'],
       links: {
         ios: 'https://apps.apple.com/us/app/zone-group-voice-chat-room/id6744646452',
         android: 'https://play.google.com/store/apps/details?id=com.zoneteamx.app&hl=en_US'
@@ -51,11 +51,11 @@ const Projects = () => {
     },
     {
       title: 'Entervu',
-      description: 'Short-form video social networking app for professionals built with Jetpack Compose. Features intuitive video feed with horizontal/vertical swipe navigation, ExoPlayer HLS streaming with 80% improved load times, and custom video compression achieving 60% file size reduction.',
+      description: 'Professional social media app for short-form video networking. Features swipe-based video navigation, chat capabilities, and built-in video editing tools for seamless content creation and sharing.',
       image: '/projects/entervu/collage.jpeg',
       type: 'Mobile App',
       icon: Smartphone,
-      technologies: ['Android', 'Jetpack Compose', 'ExoPlayer', 'HLS Streaming', 'Video Compression', 'Video Editing'],
+      technologies: ['Android', 'Jetpack Compose', 'ExoPlayer', 'HLS Streaming', 'Video Compression', 'Video Editing', 'Chat Integration'],
       links: {
         website: 'https://www.entervu.com/'
       },
@@ -63,7 +63,7 @@ const Projects = () => {
     },
     {
       title: 'BracketIT',
-      description: 'Sports bracket prediction platform for 6 major tournaments built with Flutter. Features dynamic bracket visualizations using CustomPaint, private/public pools, competitive leaderboards, and cross-platform deployment.',
+      description: 'Sports bracket prediction platform supporting major tournaments such as the FIFA World Cup. Converts traditional paper brackets to digital format with dynamic visualization, leaderboards, and community pools.',
       image: '/projects/bracketit/collage.png',
       type: 'Mobile App',
       icon: Smartphone,
@@ -75,11 +75,11 @@ const Projects = () => {
     },
     {
       title: 'Baghchal',
-      description: 'Strategic cultural board game with user-selectable AI difficulty (depth 1-5) powered by alpha-beta pruning. Built with Jetpack Compose and CustomPainter for efficient rendering, optimized with KMM reducing platform-specific development time by 50%.',
+      description: 'Digital version of the strategic board game Baghchal. Supports play against AI or 1v1 matches with friends, featuring adjustable difficulty and efficient cross-platform rendering.',
       image: '/projects/baghchal/collage.jpeg',
       type: 'Game',
       icon: Globe,
-      technologies: ['Kotlin Multiplatform', 'Alpha-Beta Pruning', 'Jetpack Compose', 'CustomPainter', 'AI Strategy'],
+      technologies: ['Kotlin Multiplatform', 'AI Strategy', 'Jetpack Compose', 'CustomPainter'],
       links: {
         website: 'https://baghchal.spiralogics.com/'
       },
@@ -87,7 +87,7 @@ const Projects = () => {
     },
     {
       title: 'GetFit',
-      description: 'Fitness tracking app developed using MVVM architecture and Dependency Injection with Hilt. Integrated Strava API for real-time workout data synchronization and performance metrics tracking.',
+      description: 'Fitness competition app that integrates with Strava, enabling users to compete on specific exercises, track performance, and view rankings on leaderboards.',
       image: '/projects/getfit/collage.png',
       type: 'Mobile App',
       icon: Smartphone,
@@ -96,6 +96,9 @@ const Projects = () => {
       featured: false
     }
   ]
+  
+  
+  
 
   const getLinkIcon = (linkType: string) => {
     switch (linkType) {
@@ -171,7 +174,7 @@ const Projects = () => {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern"
+                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-lightpink transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 group-hover:border-neon-lightpink transition-colors duration-300 font-modern"
                       >
                         {tech}
                       </span>
@@ -188,7 +191,7 @@ const Projects = () => {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center text-neon-cyan hover:text-neon-purple font-medium transition-colors duration-300 text-sm font-modern"
+                            className="flex items-center text-neon-pink hover:text-neon-green font-medium transition-colors duration-300 text-sm font-modern"
                           >
                             <IconComponent size={16} className="mr-2" />
                             {getLinkLabel(linkType)}
@@ -244,7 +247,7 @@ const Projects = () => {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-cyan transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern"
+                        className="px-2 py-1 bg-neon-purple/10 text-neon-purple group-hover:text-neon-lightpink transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 group-hover:border-neon-lightpink transition-colors duration-300 font-modern"
                       >
                         {tech}
                       </span>
@@ -261,7 +264,7 @@ const Projects = () => {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center text-neon-cyan hover:text-neon-purple text-xs font-medium transition-colors duration-300 font-modern"
+                            className="flex items-center text-neon-pink hover:text-neon-green text-xs font-medium transition-colors duration-300 font-modern"
                           >
                             <IconComponent size={12} className="mr-1" />
                             {getLinkLabel(linkType)}
