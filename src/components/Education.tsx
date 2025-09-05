@@ -66,7 +66,7 @@ const Education = () => {
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-300 text-sm leading-relaxed font-modern">
+                  <p className="text-white text-sm leading-relaxed font-modern">
                     {edu.description}
                   </p>
                   
@@ -78,7 +78,7 @@ const Education = () => {
                       </div>
                       <ul className="space-y-2">
                         {edu.achievements.map((achievement, i) => (
-                          <li key={i} className="flex items-start text-gray-300 text-sm font-modern">
+                          <li key={i} className="flex items-start text-white text-sm font-modern">
                             <div className="w-1.5 h-1.5 bg-neon-purple rounded-full mt-2 mr-3 flex-shrink-0"></div>
                             {achievement}
                           </li>

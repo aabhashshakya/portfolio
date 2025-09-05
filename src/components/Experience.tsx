@@ -104,7 +104,7 @@ const Experience = () => {
                           <Briefcase size={16} className="mr-2 text-neon-cyan" />
                           {exp.company}
                         </div>
-                        <div className="flex flex-col sm:flex-row sm:items-center text-gray-400 text-sm space-y-1 sm:space-y-0 sm:space-x-4 font-modern">
+                        <div className="flex flex-col sm:flex-row sm:items-center text-white text-sm space-y-1 sm:space-y-0 sm:space-x-4 font-modern">
                           <div className="flex items-center">
                             <MapPin size={16} className="mr-2 text-neon-cyan" />
                             {exp.location}
@@ -113,14 +113,14 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    <p className="text-gray-300 mb-4 leading-relaxed font-modern">
+                    <p className="text-white mb-4 leading-relaxed font-modern">
                       {exp.description}
                     </p>
 
                     {/* Achievements */}
                     <ul className="space-y-2 mb-4">
                       {exp.achievements.map((achievement, achievementIndex) => (
-                        <li key={achievementIndex} className="flex items-start text-gray-300 text-sm font-modern">
+                        <li key={achievementIndex} className="flex items-start white text-sm font-modern">
                           <div className="w-1.5 h-1.5 bg-neon-cyan rounded-full mt-2 mr-3 flex-shrink-0"></div>
                           {achievement}
                         </li>

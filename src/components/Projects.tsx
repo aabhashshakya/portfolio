@@ -166,7 +166,7 @@ const Projects = () => {
                   <h3 className="text-xl font-cyber font-bold text-white mb-3 group-hover:text-neon-cyan transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 mb-4 leading-relaxed text-sm font-modern">
+                  <p className="text-white mb-4 leading-relaxed text-sm font-modern">
                     {project.description}
                   </p>
 
@@ -239,7 +239,7 @@ const Projects = () => {
                   <h3 className="text-base font-cyber font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors duration-300">
                     {project.title}
                   </h3>
-                  <p className="text-gray-300 mb-3 text-xs leading-relaxed font-modern">
+                  <p className="text-white mb-3 text-xs leading-relaxed font-modern">
                     {project.description}
                   </p>
 
