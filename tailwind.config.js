@@ -19,6 +19,7 @@ export default {
           purple: '#bf00ff',
           pink: '#ff0080',
           lightpink: '#ffb6c1',
+          red: '#ff0040',
           green: '#00ff80',
           blue: '#0080ff',
           yellow: '#ffff00',
@@ -98,17 +99,8 @@ export default {
           '100%': { transform: 'translateY(100vh)' },
         },
       },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'cyber-grid': `
-          linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px)
-        `,
-      },
-      backgroundSize: {
-        'grid': '50px 50px',
-      },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
