@@ -54,9 +54,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-500 flex items-center justify-center font-modern">
-              © {currentYear} Aabhash Shakya. Made with{' '}
-              <Heart className="mx-2 text-neon-pink" size={16} fill="currentColor" />
-              and lots of coffee.
+              © {currentYear} Aabhash Shakya
             </p>
           </div>
         </div>

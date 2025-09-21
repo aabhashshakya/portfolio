@@ -223,7 +223,7 @@
   }
   
   .gradient-text-ios {
-    background: linear-gradient(90deg, #cf307f 0%, #fff9b0 100%);
+    background: linear-gradient(90deg, #ff3d54 0%, #cbff11 50%, #fa4007 70%, #f40202 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -232,7 +232,7 @@
   }
   
   .gradient-text-android {
-    background: linear-gradient(90deg, #e01dbd 0%, #afa214 100%);
+    background: linear-gradient(90deg, #fb0420 0%, #fff9b0 40%, #2e85db 70%, #0cdd16 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -241,7 +241,7 @@
   }
   
   .gradient-text-website {
-    background: linear-gradient(90deg, #ff80c0 0%, #fff9b0 100%);
+    background: linear-gradient(90deg, #ff80c0 0%,#ffea06 60%, #9b8e00 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;

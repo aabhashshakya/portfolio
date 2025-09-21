@@ -18,7 +18,7 @@ export default {
           cyan: '#00ffff',
           purple: '#bf00ff',
           pink: '#ff0080',
-          lightpink: '#ffb6c1',
+          lightpink: '#fbe2e6ff',
           red: '#ff0040',
           green: '#00ff80',
           blue: '#0080ff',
