@@ -29,7 +29,7 @@ const Education = () => {
       period: '2022',
       description: 'Focused on software engineering, algorithms, and mobile application development.',
       achievements: [
-        '1st Position in Final Year Real Time Project (2022) - Backend development for "Resume Generator" web application allowing users to customize resumes and technical documents',
+        '1st Position in Final Year Real Time Project (2022) - Developed "Resume Generator" application allowing users to customize resumes and technical documents',
         'Runner-up in NCCS Hackathon (2021) - Developed Android chat application "ChatBiz" for organizational communication with real-time location tracking'
       ]
     }
