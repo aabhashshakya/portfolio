@@ -24,6 +24,20 @@ const Experience = () => {
 
   const experiences = [
     {
+      title: 'Flutter Developer',
+      company: 'ZoneTeamX',
+      location: 'Hong Kong',
+      description: 'Developed real-time voice and chat communication application with advanced features and multi-platform support.',
+      achievements: [
+        'Managed complete application architecture, development, and deployment lifecycle',
+        'Collaborated with international team to deliver complex real-time communication features',
+        'Implemented payment integration across 20+ countries in Asia and the Middle East, supporting multiple currencies',
+        'Implemented in-app purchases for digital goods and mini-games',
+        'Developed interactive gaming features within the main application'
+      ],
+      technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Flame Engine', 'Payment Integration', 'In-app Purchases']
+    },
+     {
       title: 'Software Engineer [Mobile]',
       company: 'Spiralogics Inc.',
       location: 'Sankhamul, Nepal',
@@ -39,20 +53,6 @@ const Experience = () => {
         'Developed Proof of Concept (POC) apps to evaluate emerging technologies'
       ],
       technologies: ['Android', 'Kotlin', 'Java', 'Flutter','Xamarin', 'Jetpack Compose', 'KMM', 'Firebase', 'ExoPlayer', 'HLS Streaming']
-    },
-    {
-      title: 'Flutter Developer',
-      company: 'ZoneTeamX',
-      location: 'Hong Kong',
-      description: 'Developed real-time voice and chat communication application with advanced features and multi-platform support.',
-      achievements: [
-        'Managed complete application architecture, development, and deployment lifecycle',
-        'Collaborated with international team to deliver complex real-time communication features',
-        'Implemented payment integration across 20+ countries in Asia and the Middle East, supporting multiple currencies',
-        'Implemented in-app purchases for digital goods and mini-games',
-        'Developed interactive gaming features within the main application'
-      ],
-      technologies: ['Flutter', 'Dart', 'WebRTC', 'ZegoCloud SDK', 'Flame Engine', 'Payment Integration', 'In-app Purchases']
     },
     {
       title: 'Cloud Analyst',
