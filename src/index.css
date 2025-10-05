@@ -228,32 +228,7 @@
     transition: background 0.3s, color 0.3s;
   }
   
-  .gradient-text-ios {
-    background: linear-gradient(90deg, #ff3d54 0%, #cbff11 50%, #fa4007 70%, #f40202 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    transition: background 0.4s, color 0.4s, -webkit-text-fill-color 0.4s;
-  }
-  
-  .gradient-text-android {
-    background: linear-gradient(90deg, #fb0420 0%, #fff9b0 40%, #2e85db 70%, #0cdd16 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    transition: background 0.4s, color 0.4s, -webkit-text-fill-color 0.4s;
-  }
-  
-  .gradient-text-website {
-    background: linear-gradient(90deg, #ff80c0 0%,#ffea06 60%, #9b8e00 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    transition: background 0.4s, color 0.4s, -webkit-text-fill-color 0.4s;
-  }
+
   
   .text-fill-neon-red {
     -webkit-text-fill-color: #ff0040;

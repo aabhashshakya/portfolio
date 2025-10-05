@@ -228,13 +228,13 @@ const Projects = () => {
                               href={url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center font-medium text-sm font-modern transition-all duration-300 hover:scale-110 hover:-translate-y-1 focus-visible:scale-110 focus-visible:-translate-y-1 outline-none"
+                              className="flex items-center px-3 py-1 rounded-lg border border-white/20 bg-black/20 backdrop-blur-md text-cyan-300 font-medium text-sm font-modern transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:bg-black/40 focus-visible:scale-110 focus-visible:-translate-y-1 outline-none"
                               aria-label={getLinkLabel(linkType)}
                             >
-                              <IconComponent size={16} className={iconClass} />
-                              <span className={labelClass}>{getLinkLabel(linkType)}</span>
+                              <IconComponent size={16} className="mr-2" />
+                              <span>{getLinkLabel(linkType)}</span>
                             </a>
-                          )
+                          );
                         })}
                       </div>
                     )}
@@ -306,17 +306,17 @@ const Projects = () => {
                           else if (linkType === 'website') gradientClass = 'gradient-text-website'
                           const labelClass = `${gradientClass} transition-all duration-300 group-hover:text-neon-cyan group-focus-visible:text-neon-cyan`
 
-                          return (
+                           return (
                             <a
                               key={linkType}
                               href={url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="flex items-center text-xs font-medium font-modern transition-all duration-300 hover:scale-110 hover:-translate-y-1 focus-visible:scale-110 focus-visible:-translate-y-1 outline-none"
+                              className="flex items-center px-3 py-1 rounded-lg border border-white/20 bg-black/20 backdrop-blur-md text-cyan-300 font-medium text-sm font-modern transition-all duration-300 hover:scale-110 hover:-translate-y-1 hover:bg-black/40 focus-visible:scale-110 focus-visible:-translate-y-1 outline-none"
                               aria-label={getLinkLabel(linkType)}
                             >
-                              <IconComponent size={12} className={iconClass} />
-                              <span className={labelClass}>{getLinkLabel(linkType)}</span>
+                              <IconComponent size={16} className="mr-2" />
+                              <span>{getLinkLabel(linkType)}</span>
                             </a>
                           )
                         })}
