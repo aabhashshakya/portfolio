@@ -57,7 +57,7 @@ const Education = () => {
                       <h4 className="text-lg font-cyber font-bold text-white group-hover:text-neon-cyan transition-colors duration-300">
                         {edu.degree}
                       </h4>
-                      <p className="text-neon-purple group-hover:text-neon-green transition-colors duration-300 font-semibold font-modern">{edu.institution}</p>
+                      <p className="text-neon-purple group-hover:text-white transition-colors duration-300 font-semibold font-modern">{edu.institution}</p>
                     </div>
                     <div className="text-right text-sm text-white font-modern">
                       <div className="flex items-center">

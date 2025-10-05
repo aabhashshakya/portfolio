@@ -203,7 +203,7 @@ const Projects = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-1 bg-neon-purple/10 text-neon-purple transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern group-hover:text-neon-lightpink group-hover:border-neon-cyan"
+                          className="px-2 py-1 bg-neon-purple/10 text-neon-purple transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern group-hover:text-white/80 group-hover:border-neon-cyan group-hover:bg-neon-cyan/30"
                         >
                           {tech}
                         </span>
@@ -287,7 +287,7 @@ const Projects = () => {
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-1 bg-neon-purple/10 text-neon-purple transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern group-hover:text-neon-lightpink group-hover:border-neon-cyan"
+                          className="px-2 py-1 bg-neon-purple/10 text-neon-purple transition-colors duration-300 rounded text-xs font-medium border border-neon-purple/30 font-modern group-hover:text-white/80 group-hover:border-neon-cyan group-hover:bg-neon-cyan/30"
                         >
                           {tech}
                         </span>
