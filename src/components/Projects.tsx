@@ -171,7 +171,7 @@ const Projects = () => {
               .map((project, index) => (
                 <div
                   key={project.title}
-                  className="glass-effect rounded-2xl overflow-hidden group animate-on-scroll cyber-border"
+                  className="glass-effect-black rounded-2xl overflow-hidden group animate-on-scroll cyber-border"
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className="relative overflow-hidden">
@@ -255,7 +255,7 @@ const Projects = () => {
               .map((project, index) => (
                 <div
                   key={project.title}
-                  className="glass-effect rounded-xl overflow-hidden group animate-on-scroll cyber-border"
+                  className="glass-effect-black rounded-xl overflow-hidden group animate-on-scroll cyber-border"
                   style={{ animationDelay: `${(index + 2) * 0.1}s` }}
                 >
                   <div className="relative overflow-hidden">

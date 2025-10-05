@@ -93,6 +93,12 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
+  .glass-effect-black {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(3, 205, 245, 0.3);
+  }
+
   section {
     scroll-margin-top: 3rem; /* or the height of your header */
   }
